@@ -114,7 +114,7 @@ Please respond with ONLY a JSON object in this exact format (no markdown, no bac
   };
   
   const handleExampleClick = (example) => {
-  setQuestion(example);
+    setQuestion(example);
   };
 
   return (
@@ -183,7 +183,7 @@ Please respond with ONLY a JSON object in this exact format (no markdown, no bac
               {examples.map((example, idx) => (
                 <button
                   key={idx}
-                  onClick={() => useExample(example)}
+                  onClick={() => handleExampleClick(example)}
                   className="px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-lg text-sm hover:bg-indigo-100 transition-colors"
                 >
                   {example}
