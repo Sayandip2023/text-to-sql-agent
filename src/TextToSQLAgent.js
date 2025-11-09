@@ -112,9 +112,9 @@ Please respond with ONLY a JSON object in this exact format (no markdown, no bac
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
-  const useExample = (example) => {
-    setQuestion(example);
+  
+  const handleExampleClick = (example) => {
+  setQuestion(example);
   };
 
   return (
